@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="VIROLAB">
+    <meta name="description" content="Página web del VIROLAB">
+    <meta name="keywords" content="Investigación, Fitovirus, Laboratorio, Virología">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>VIROLAB | CICESE</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/cicese.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#"> 
+            <img src="imagenes/cicese.png" width="80" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Integrantes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/virolab.png" alt="Foto de Anabelee Ochoa">
+        <h1>Laboratorio de Virología Agrícola del CICESE</h1>
+        <!--<h2>Diagnóstico molecular de virus y patógenos asociados a cultivos de importancia regional y nacional</h2>-->
+
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter">Diagnóstico molecular de virus y patógenos asociados a cultivos de importancia regional y nacional</h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/5098401.jpg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>
+    </section>
+
+    <!-- Acerca de nosotros -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Acerca de nosotros</h2>
+        <p class="seccion-texto">
+         Estudiamos problemas microbiológicos en áreas básicas contemporáneas de biología celular y molecular, así como de resolver problemas microbiológicos vitales para la economía de la región en sus aspectos agrícolas, pecuarios e industriales. </p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <!-- <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Poseo conocimientos básicos en el ámbito de desarrollo web, habiendo creado páginas simples utilizando HTML, CSS y un poco de JavaScript. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">React</span>
+            </div>
+          </div>
+
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Nanotecnología</p>
+            <p>Como estudiante de nanotecnología estoy dedicada al desarrollo de la ciencia en el campo de catalisis. Cuento con mucha experiencia en el laboratorio sintetizando catalizadores y caracterizando sus propiedades químicas, físicas, etc. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Investigación</span>
+              <span class="badge text-bg-primary">Artículos</span>
+              <span class="badge text-bg-primary">Estancias</span>
+            </div>
+          </div>
+
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Divulgación</p>
+            <p>Como cientifica estoy comprometida con la divulgación de la ciencia, realizando varios eventos, publicaciones y videos compartiendo conocimiento científico de alta relevancia. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Divulgación</span>
+              <span class="badge text-bg-primary">Producción de videos</span>
+              <span class="badge text-bg-primary">Blogs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Estos son algunos proyectos de divulgación creados por las y los estudiantes del laboratorio</h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/tomate.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Interfaz virus de tomate</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/anabeleex/clon-google" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+<!--           <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto2.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Calculadora</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/anabeleex/calculadora-anabelee" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section> -->
+
+    <!-- Articulos -->
+    <section class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro">Artículos de investigación</h2>
+      <div class="card">
+        <div class="card-header">
+          Artículos más recientes
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="https://doi.org/10.1007/s42161-022-01287-9" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Understanding tobamovirus-plant interactions: implications for breeding resistance to tomato brown rugose fruit virus.
+            </li>
+          </a>
+          <a href="http://dx.doi.org/https://doi.%20org/10.32854/agrop.v15i4.2109" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Grapevine viruses in Mexico: studies and reports. Agro productividad
+            </li>
+          </a>
+          <a href="http://dx.doi.org/10.1099/jgv.0.001717" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Novel viral RNA genomes of the vine mealybug Planococcus ficus.
+            </li>
+          </a>
+        </ul>
+      </div>
+      <a href="https://www.cicese.edu.mx/investigacion/personal_academico/3502" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más artículos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Integrantes -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Integrantes</h2>
+      <h3 class="seccion-descripcion">Estudiantes e investigadores/as del laboratorio</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/usuaria.png" alt="Foto de Gino">
+              <div class="testimonio-info">
+                <p class="cliente">Dra. Jimena Carrillo Tripp</p>
+                <p class="cargo">Encargada del laboratorio | SNI 1</p>
+              </div>
+              <p class="testimonio-texto">Pertenece al Sistema Nacional de Invesigadores, es Doctora en Ciencias con especialidad en Biotecnología de Plantas, trabajó como investigadora postdoctoral en el Departamento de Protección de Plantas en Iowa.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/usuaria.png" alt="Foto de Nora">
+              <div class="testimonio-info">
+                <p class="cliente"> M.C. Karen Guadalupe García Reséndiz</p>
+                <p class="cargo">Estudiante de doctorado</p>
+              </div>
+              <p class="testimonio-texto">Estudió la Licenciatura en Biología en la Universidad de Sonora, la Maestría en Ciencias en el Centro de Investigación en Alimentación y Desarrollo, A.C.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Contáctanos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Si estás interesado/a en alguno de los proyectos de investigación para realizar tu servicio social, tesis o un posgrado, podríamos tener espacios.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:janedoe@micorreo.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Estudio de virus de importancia agrícola </p>
+    <!--   <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://github.com/anabeleex/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/anabelee-ochoa-ritchie-6842a6260/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="g9_ochoa@ens.cnyn.unam.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div> -->
+      <div class="derechos-de-autor">Creado por Anabelee Ochoa (2023) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>
