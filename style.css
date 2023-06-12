@@ -24,6 +24,10 @@ h1 {
   font-family: 'Rubik Dirt', cursive;
 }
 
+h4 {
+  font-size: 16px;
+}
+
 .seccion-oscura {
   color: white;
   background-color: #1b1b32;
@@ -85,62 +89,18 @@ h1 {
   color: #615151;
 }
 
-/* Sobre mi */
+/* Acerca de */
 
-.sobre-mi {
-  height: 500px;
+.acerca-de {
+  height: 400px;
   padding: 10px;
 }
 
-.sobre-mi .contenedor {
+.acerca-de .contenedor {
   max-width: 600px;
   text-align: center;
 }
 
-/* Experiencia */
-
-.experiencia {
-  padding: 40px 40px 60px 40px;
-}
-
-.experiencia .columna {
-  padding: 20px;
-  border: 2px solid #8080804d;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  transition: all 0.2s ease-in;
-}
-
-.experiencia .columna:hover {
-  color: white;
-  background-color: #1b1b32;
-}
-
-.experiencia i {
-  font-size: 2.5rem;
-  color: #7ade30;
-  background-color: #0a0a23;
-  padding: 8px 19px;
-  border-radius: 50%;
-}
-
-.experiencia-titulo {
-  font-size: 25px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.badges-contenedor {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.badge {
-  margin: 5px;
-}
 
 /* Proyectos */
 
@@ -200,9 +160,26 @@ h1 {
   margin: 10px;
 }
 
+/* Divulgación */
+
+.divulgacion {
+  padding: 40px;
+}
+
+.divulgacion img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+
 /* Articulos */
 
 .articulos {
+  height: 600px;
   min-height: 500px;
   padding: 30px;
 }
@@ -217,7 +194,7 @@ h1 {
   font-weight: bold;
 }
 
-/* Testimonios */
+/* Integrantes */
 
 .testimonios {
   padding: 40px 40px 80px 40px;
@@ -226,9 +203,21 @@ h1 {
 .testimonios .carousel {
   max-width: 800px;
 }
+.banner {
+  padding: 40px 40px 80px 40px;
+}
 
+.banner .carousel {
+  max-width: 800px;
+}
+
+.banner-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
 .carousel-item {
-  height: 500px;
+  height: 400px;
 }
 
 .carousel-item .container {
@@ -269,6 +258,72 @@ h1 {
 .testimonio-info .cargo {
   font-size: 0.9rem;
   color: #656060;
+}
+
+.comunidad {
+  height: 500px;
+  padding: 10px;
+}
+
+.comunidad .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Servicio */
+.servicio {
+  height: 300px;
+  padding: 10px;
+}
+
+.servicio .contenedor {
+  max-width: 1000px;
+  text-align: center;
+}
+
+/* Sitios de interés */
+
+.bibliografia {
+  padding: 40px;
+  height: 300px;
+
+}
+
+.bibliografia img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.bibliografia-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+
+/* Eventos */
+.eventos {
+  height: 600px;
+  padding: 10px;
 }
 
 /* Contacto */
@@ -342,33 +397,6 @@ footer {
   font-family: 'Quicksand', sans-serif;
 }
 
-.iconos-redes-sociales a {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2px;
-  margin: 10px;
-  border: 2px solid white;
-  border-radius: 50%;
-  transition: all 0.2s ease-in;
-}
-
-.iconos-redes-sociales i {
-  color: white;
-  font-size: 1.5rem;
-  transition: all 0.2s ease-in;
-}
-
-.iconos-redes-sociales a:hover {
-  background-color: white;
-  border: 2px solid rgb(13, 110, 253);
-}
-
-.iconos-redes-sociales a:hover i {
-  color: black;
-}
 
 .derechos-de-autor {
   font-size: 15px;
@@ -409,4 +437,46 @@ footer {
   .hero-inferior-imagen {
     max-width: 600px;
   }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slider{
+width: 100%;
+height: 600px;
+overflow: hidden;
+}
+.slider ul{
+  display: flex;
+  animation: cambio 20s infinite alternate linear;
+  width: 400%;
+}
+.slider li{
+  width: 100%;
+  list-style: none;
+}
+.slider img{
+  width: 100%;
+  height: 100%;
+}
+@keyframes cambio{
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+  
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+  
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+  
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider img{
+  height: 100vh;
+}
 }

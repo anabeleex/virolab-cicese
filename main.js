@@ -7,7 +7,9 @@ let typewriter = new Typewriter(app, {
  
 typewriter
   .pauseFor(2500)
-  .typeString('Diagnóstico molecular de virus y patógenos asociados a cultivos de importancia regional y nacional.')
+  .typeString('Estudio de virus de importancia agrícola a nivel regional y nacional.')
   .pauseFor(200)
   .deleteChars(10)
   .start();
+
+  
